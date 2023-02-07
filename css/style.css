@@ -24,6 +24,8 @@ header{
     width: 240px;
     max-height:calc(100vh - 90px);
 
+    overflow: hidden;
+
 }
 
 header #header-inner{
@@ -441,6 +443,9 @@ footer{
     align-items: center;
 
     padding: 0 15px;
+
+    position: fixed;
+    bottom: 0;
 
 }
 
