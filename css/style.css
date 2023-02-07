@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: 'Montserrat', sans-serif; ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -19,6 +20,7 @@ header{
 
     max-width: 250px;
     height: calc(100vh - 90px);
+
 }
 
 header #header-inner{
@@ -111,7 +113,6 @@ header #header-inner #header-top #playlists ul li a i{
 
 header #header-inner #header-top #playlists ul li a{
     color: #adadad;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -139,7 +140,6 @@ header #header-inner #header-bottom #download img{
 
 header #header-inner #header-bottom #download span{
     color: #adadad;
-    font-weight: bold;
     font-size: .8em;
 }
 
@@ -168,6 +168,173 @@ header #header-inner #header-bottom #user img{
 
 header #header-inner #header-bottom #user span{
     color: white;
-    font-weight: bold;
 }
 
+
+
+
+
+
+
+
+
+/* footer commands bar */
+
+footer{
+    width: 100vw;
+    height: 90px;
+
+    background-color: #2d2d2d;
+    
+    position: fixed;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+}
+
+
+/* FOOTER LEFT  */
+footer #footer-left{
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* playing song  */
+footer #footer-left #playing-song{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer #footer-left #playing-song img{
+    width: 50px;
+}
+
+/* playing song info */
+footer #footer-left #playing-song #playing-song-info{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-left #playing-song #playing-song-info #footer-singer{
+    color: white;
+    font-size: .8em;
+
+}
+
+footer #footer-left #playing-song #playing-song-info #footer-song{
+    color: #adadad;
+    font-size: .6em;
+}
+
+/* footer icon  */
+footer #footer-left .icons{
+    display: flex;
+    gap: 15px;
+
+    color: #adadad;
+}
+footer #footer-left #icons i{
+    color: #adadad;
+}
+
+
+
+/* FOOTER MID */
+
+footer #footer-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* footer mid top */
+footer #footer-mid-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer #footer-mid-top i{
+    color: white;
+}
+
+footer #footer-mid-top i.fa-regular{
+    font-size: 1.6em;
+    padding: 0 10px;
+}
+
+/* footer mid bottom */
+
+footer #footer-mid-bottom {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+footer #footer-mid-bottom span{
+    color: white;
+    font-size: .5em;
+}
+
+/* time bar  */
+footer #footer-mid-bottom #time-bar{
+    height: 3px;
+    width: 400px;
+    background-color: #656565;
+    border-radius: 10px;
+
+}
+
+/* listened time bar  */
+footer #footer-mid-bottom #time-bar #time-listened-bar{
+    height: 3px;
+    width: 100px;
+    background-color: #c8c8c8;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer #footer-mid-bottom #time-bar #time-listened-bar i{
+    display: none;
+}
+
+
+/* FOOTER RIGHT */
+
+footer #footer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+footer #footer-right .icons{
+    color: white;
+    display: flex;
+    gap: 15px;
+}
+
+footer #footer-right #volume-bar{
+    height: 3px;
+    width: 100px;
+    background-color: #656565;
+    border-radius: 10px;
+}
+
+footer #footer-right #volume-bar #volume-level{
+    height: 3px;
+    width: 30px;
+    background-color: #c8c8c8;
+    border-radius: 10px;
+}
