@@ -251,11 +251,10 @@ nav ul li hr.selected-link{
 
 
 
-/* main sect1  */
+/* MAIN SECT1  */
 
 main #sect1{
-
-    padding-left: 20px;
+    padding: 30px 20px 0;
 }
 
 main #sect1 h2{
@@ -265,13 +264,13 @@ main #sect1 h2{
 main #sect1 #recently-played {
     display: flex;
     gap: 20px;
-
     padding-top: 30px;
 
 }
 
 /* albums cards */
 main #sect1 #recently-played .card{
+    width: calc(100% / 6 - 20px);
 
     display: flex;
     flex-direction: column;
@@ -279,9 +278,6 @@ main #sect1 #recently-played .card{
 
 }
 /* album cover img  */
-main #sect1 #recently-played .card .album-cover{
-    max-width: calc(100% - 20px);
-}
 
 main #sect1 #recently-played .card .album-cover img{
     width: 100%;
@@ -293,29 +289,81 @@ main #sect1 #recently-played .card #album-info{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
 }
 
 
 main #sect1 #recently-played .card #album-info .title{
     color: white;
     font-weight: 600;
+    text-align: center;
 }
 
 main #sect1 #recently-played .card #album-info .subtitle{
     color: #adadad;
     font-size: .8em;
+
+    text-align: center;
 }
 
 
 
+/* MAIN SECT2 */
 
 
+main #sect2{
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+/* sect2 title and subtitle */
+main #sect2 #sect2-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+main #sect2 h2{
+    color: white;
+}
+
+main #sect2 .suggestion{
+    font-size: .8em;
+    color: #adadad;
+}
+
+/* sect2 cards */
+
+main #sect2 #created-for{
+    display: flex;
+    gap: 20px;
+
+    padding-top: 30px;
+}
+main #sect2 #created-for .card{
+    width: calc(100% / 6 - 20px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* album cover img  */
+main #sect2 #created-for .card .album-cover img{
+    width: 100%;
+}
+
+/* album info  */
+main #sect2 #created-for .card #album-info{
+
+}
 
 
-
-
-
-
+main #sect2 #created-for .card #album-info .title{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
 
 
 
