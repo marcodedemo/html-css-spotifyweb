@@ -39,9 +39,16 @@ header #header-inner{
 }
 
 /* header logo */
-header #header-inner #header-top #header-logo img{
+header #header-inner #header-top #header-logo img#standard-logo{
     width: 150px;
     padding-left: 20px;
+}
+
+header #header-inner #header-top #header-logo img#small-logo{
+    width: 30px;
+    margin: 0 10px;
+
+    display: none;
 }
 
 /* HEADER TOP MENU */
@@ -64,7 +71,7 @@ header #header-inner #header-top #menu ul li:first-child{
 }
 
 header #header-inner #header-top #menu ul li{
-    padding-left: 17px;
+    padding-left: 20px;
 }
 
 
@@ -607,7 +614,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 15px;
+    padding: 0 10px;
 
     position: fixed;
     bottom: 0;
@@ -721,7 +728,7 @@ footer #footer-mid-bottom span{
 /* time bar  */
 footer #footer-mid-bottom #time-bar{
     height: 3px;
-    width: 400px;
+    width: 300px;
     background-color: #656565;
     border-radius: 10px;
 
@@ -801,4 +808,176 @@ footer #footer-right #volume-bar #volume-level:hover{
 
 footer #footer-right #volume-bar #volume-level:hover i{
     display: block;
+}
+
+
+
+
+/* media query tablet large */
+
+@media screen and (max-width: 992px){
+
+    /* section 1 */
+    main #sect1 #recently-played {
+        flex-wrap: wrap;
+    }
+
+    main #sect1 #recently-played .card{
+        width: calc(100% / 4 - 20px );
+    }
+
+
+    /* section 2 */
+    main #sect2 #created-for .card{
+        width: calc(100% / 4 - 20px);
+    }
+
+
+    /* section 3  */
+    main #sect3 #popular-songs .card{
+        width: calc(100% / 4 - 20px);
+    }
+
+    /* footer */
+    footer #footer-mid-bottom #time-bar{
+        width: 250px;
+    }
+}
+
+
+/* media query tablet small */
+
+@media screen and (max-width: 768px){
+
+    /* section 1  */
+    main #sect1 #recently-played .card{
+        width: calc(100% / 2 - 20px );
+    }
+
+    /* section 2  */
+    main #sect2 #created-for .card{
+        width: calc(100% / 2 - 20px);
+    }
+
+    /* section 3 */
+    main #sect3 #popular-songs .card{
+        width: calc(100% / 2 - 20px);
+    }
+
+
+    /* footer  */
+
+    /* FOOTER LEFT  */
+    footer #footer-left{
+        gap: 20px;
+    }
+    footer #footer-left .icons{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* FOOTER MID */
+    footer #footer-mid-bottom{
+        gap: 10px;
+    }
+    footer #footer-mid-bottom #time-bar{
+        width: 150px;
+    }
+
+    /* FOOTER RIGHT */
+    footer #footer-right #volume-bar{
+        width: 80px;
+    }
+}
+
+
+/* media query mobile */
+
+@media screen and (max-width: 576px){
+
+    /* header  */
+    header{
+        width:auto;
+    }
+
+    /* HEADER TOP */
+    header #header-inner #header-top #playlists{
+        display: none;
+    }
+
+    header #header-inner #header-top #menu ul a span{
+        display: none;
+    }
+    
+    /* menu logo */
+    header #header-inner #header-top #header-logo img#standard-logo{
+        display: none;
+    }
+
+    header #header-inner #header-top #header-logo img#small-logo{
+        display: block;
+    }
+
+    /* menu li remove + padding */
+    header #header-inner #header-top #menu ul li:first-child{
+        border-left: none;
+        padding: 0 10px;
+    }
+
+    header #header-inner #header-top #menu ul li{
+        padding: 0 10px;
+    }
+
+    /* HEADER BOTTOM */
+    header #header-inner #header-bottom{
+        padding-left: 10px;
+    }
+    header #header-inner #header-bottom #download a span{
+        display: none;
+    }
+
+    header #header-inner #header-bottom hr{
+        display: none;
+    }
+    
+    header #header-inner #header-bottom #user span{
+        display: none;
+    }
+
+
+
+    /* main */
+    main{
+        width: calc(100% - 50px);
+    }
+
+
+
+    /* footer */
+
+    /* FOOTER LEFT */
+    footer #footer-left #playing-song{
+        gap: 5px;
+    }
+    footer #footer-left #playing-song img{
+        width: 30px;
+    }
+
+    /* FOOTER MID  */
+    footer #footer-mid-top{
+        gap: 10px;
+    }
+    footer #footer-mid-bottom #time-bar{
+        width: 100px;
+    }
+
+    /* FOOTER RIGHT */
+    footer #footer-right .icons{
+        gap: 10px;
+    }
+    footer #footer-right #volume-bar{
+        width: 60px;
+    }
+
+
 }
