@@ -727,7 +727,7 @@ footer #footer-mid-bottom span{
 
 /* time bar  */
 footer #footer-mid-bottom #time-bar{
-    height: 3px;
+    height: 4px;
     width: 300px;
     background-color: #656565;
     border-radius: 10px;
@@ -736,7 +736,7 @@ footer #footer-mid-bottom #time-bar{
 
 /* listened time bar  */
 footer #footer-mid-bottom #time-bar #time-listened-bar{
-    height: 3px;
+    height: 4px;
     width: 30%;
     background-color: #c8c8c8;
     border-radius: 10px;
@@ -750,6 +750,8 @@ footer #footer-mid-bottom #time-bar #time-listened-bar i{
     display: none;
 
     color: white;
+
+    font-size: .6em;
 }
 
 /* time bar hover */
@@ -780,14 +782,14 @@ footer #footer-right .icons{
 }
 
 footer #footer-right #volume-bar{
-    height: 3px;
+    height: 4px;
     width: 100px;
     background-color: #656565;
     border-radius: 10px;
 }
 
 footer #footer-right #volume-bar #volume-level{
-    height: 3px;
+    height: 4px;
     width: 40%;
     background-color: #c8c8c8;
     border-radius: 10px;
@@ -798,8 +800,12 @@ footer #footer-right #volume-bar #volume-level{
 }
 
 footer #footer-right #volume-bar #volume-level i{
-    color: white;
     display: none;
+
+    color: white;
+
+    font-size: .6em;
+
 }
 
 footer #footer-right #volume-bar #volume-level:hover{
