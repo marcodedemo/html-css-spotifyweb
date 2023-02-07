@@ -93,6 +93,18 @@ header #header-inner #header-top #menu ul li img.white-svg{
     opacity: 0;
 }
 
+/* a hover */
+
+header #header-inner #header-top #menu ul a:hover{
+    color: white;
+}
+
+header #header-inner #header-top #menu ul a:hover img.white-svg{
+    opacity: 1;
+}
+/* /a hover */
+
+
 /* HEADER TOP PLAYLISTS  */
 header #header-inner #header-top #playlists{
 
@@ -128,6 +140,16 @@ header #header-inner #header-top #playlists ul li a{
     text-decoration: none;
 }
 
+/* a hover */
+header #header-inner #header-top #playlists ul li a:hover i{
+    background-color: white;
+}
+
+header #header-inner #header-top #playlists ul li a:hover{
+    color: white;
+}
+/* /a hover */
+
 
 /* HEADER BOTTOM  */
 
@@ -140,18 +162,42 @@ header #header-inner #header-bottom{
 }
 
  /* header bottom download  */
-header #header-inner #header-bottom #download{
+header #header-inner #header-bottom #download a{
     display: flex;
     align-items: center;
     gap: 10px;
+
+    text-decoration: none;
+    color: #adadad;
+
+    position: relative;
 }
 
-header #header-inner #header-bottom #download img{
+/* a hover */
+header #header-inner #header-bottom #download a:hover{
+    color: white;
+}
+
+header #header-inner #header-bottom #download a:hover img.white-svg{
+    opacity: 1;
+}
+
+/* /a hover */
+
+header #header-inner #header-bottom #download img.standard-svg{
     width: 20px;
 }
+header #header-inner #header-bottom #download img.white-svg{
+    width: 20px;
 
+    position: absolute;
+    left: 0;
+
+    opacity: 0;
+
+
+}
 header #header-inner #header-bottom #download span{
-    color: #adadad;
     font-size: .8em;
 }
 
@@ -209,10 +255,10 @@ main #premium{
     height: 90px;
     width: 100%;
     background-color: rgba(0, 0, 0, .4);
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
-main #premium #upgrade{
+main #premium button#upgrade{
     background-color: transparent;
     border: 1px solid white;
     border-radius: 20px;
@@ -221,6 +267,9 @@ main #premium #upgrade{
     font-size: .8em;
 }
 
+main #premium button#upgrade:hover{
+    scale: 1.2;
+}
 
 /* nav  */
 
@@ -249,6 +298,10 @@ nav ul li a{
     color: #adadad;
 
     padding-bottom: 2px;
+}
+
+nav ul li a:hover{
+    color: white;
 }
 
 nav ul li hr.selected-link{
@@ -287,10 +340,41 @@ main #sect1 #recently-played .card{
 /* album cover img  */
 main #sect1 #recently-played .card .album-cover{
     width: 100%;
+
+    position: relative;
 }
+
 main #sect1 #recently-played .card .album-cover img{
     width: 100%;
 }
+
+/* hover style */
+main #sect1 #recently-played .card .album-cover .play-hover{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+main #sect1 #recently-played .card .album-cover .play-hover i{
+    color: white;
+    font-size: 4em;
+}
+
+main #sect1 #recently-played .card:hover .play-hover{
+    display: flex;
+    cursor: pointer;
+}
+
 
 /* album info  */
 main #sect1 #recently-played .card #album-info{
@@ -306,6 +390,10 @@ main #sect1 #recently-played .card #album-info .title{
     color: white;
     font-weight: 600;
     text-align: center;
+}
+
+main #sect1 #recently-played .card #album-info .title:hover{
+    cursor: pointer;
 }
 
 main #sect1 #recently-played .card #album-info .subtitle{
@@ -360,17 +448,51 @@ main #sect2 #created-for .card{
 /* album cover img  */
 main #sect2 #created-for .card .album-cover{
     width: 100%;
+
+    position: relative;
 }
 main #sect2 #created-for .card .album-cover img{
     width: 100%;
 }
 
+/* hover style */
+
+main #sect2 #created-for .card .album-cover .play-hover{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+main #sect2 #created-for .card .album-cover .play-hover i{
+    color: white;
+    font-size: 4em;
+}
+
+main #sect2 #created-for .card:hover .play-hover{
+    display: flex;
+    cursor: pointer;
+
+}
 /* album info  */
 
 main #sect2 #created-for .card #album-info .title{
     color: white;
     font-weight: 600;
     text-align: center;
+}
+
+main #sect2 #created-for .card #album-info .title:hover{
+    cursor: pointer;
 }
 
 
@@ -401,6 +523,7 @@ main #sect3 .suggestion{
 
 main #sect3 #popular-songs{
     display: flex;
+    align-items: center;
     gap: 20px;
 
     padding-top: 30px;
@@ -415,9 +538,47 @@ main #sect3 #popular-songs .card{
 
 }
 /* album cover img  */
+main #sect3 #popular-songs .card .album-cover{
+    width: 100%;
+
+    position: relative;
+}
+
 main #sect3 #popular-songs .card .album-cover img{
     width: 100%;
     border-radius: 50%;
+}
+
+/* hover style */
+
+main #sect3 #popular-songs .card .album-cover .play-hover{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height:99%;
+
+    border-radius: 50%;
+
+
+    background-color: rgba(0, 0, 0, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+main #sect3 #popular-songs .card .album-cover .play-hover i{
+    color: white;
+    font-size: 4em;
+}
+
+main #sect3 #popular-songs .card:hover .play-hover{
+    display: flex;
+    cursor: pointer;
+
 }
 
 /* album info  */
@@ -426,6 +587,10 @@ main #sect3 #popular-songs .card #album-info .title{
     color: white;
     font-weight: 600;
     text-align: center;
+}
+
+main #sect3 #popular-songs .card #album-info .title:hover{
+    cursor: pointer;
 }
 
 
@@ -479,11 +644,19 @@ footer #footer-left #playing-song #playing-song-info #footer-singer{
     color: white;
     font-size: .8em;
 
+    text-decoration: none;
 }
 
 footer #footer-left #playing-song #playing-song-info #footer-song{
     color: #adadad;
     font-size: .6em;
+
+    text-decoration: none;
+}
+
+footer #footer-left #playing-song #playing-song-info #footer-song:hover{ 
+    color: white;
+    text-decoration: underline;
 }
 
 /* footer icon  */
@@ -493,10 +666,10 @@ footer #footer-left .icons{
 
     color: #adadad;
 }
-footer #footer-left #icons i{
-    color: #adadad;
-}
 
+footer #footer-left .icons i:hover{
+    color: white;
+}
 
 
 /* FOOTER MID */
@@ -519,9 +692,17 @@ footer #footer-mid-top i{
     color: white;
 }
 
+footer #footer-mid-top i:hover{
+    cursor: pointer;
+}
+
 footer #footer-mid-top i.fa-regular{
     font-size: 1.6em;
     padding: 0 10px;
+}
+
+footer #footer-mid-top i.fa-regular:hover{
+    scale: 1.2;
 }
 
 /* footer mid bottom */
@@ -560,7 +741,19 @@ footer #footer-mid-bottom #time-bar #time-listened-bar{
 
 footer #footer-mid-bottom #time-bar #time-listened-bar i{
     display: none;
+
+    color: white;
 }
+
+/* time bar hover */
+footer #footer-mid-bottom #time-bar #time-listened-bar:hover{
+    background-color: #9fff00;
+}
+
+footer #footer-mid-bottom #time-bar #time-listened-bar:hover i{
+    display: block;
+}
+
 
 
 /* FOOTER RIGHT */
@@ -588,7 +781,24 @@ footer #footer-right #volume-bar{
 
 footer #footer-right #volume-bar #volume-level{
     height: 3px;
-    width: 30%;
+    width: 40%;
     background-color: #c8c8c8;
     border-radius: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer #footer-right #volume-bar #volume-level i{
+    color: white;
+    display: none;
+}
+
+footer #footer-right #volume-bar #volume-level:hover{
+    background-color: #9fff00;
+}
+
+footer #footer-right #volume-bar #volume-level:hover i{
+    display: block;
 }
