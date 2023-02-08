@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+@keyframes progress{
+    0%{
+        width: 0%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -750,7 +765,11 @@ footer #footer-mid-bottom #time-bar #time-listened-bar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    animation: progress 60s infinite linear ;
+    
 }
+
 
 footer #footer-mid-bottom #time-bar #time-listened-bar i{
     display: none;
