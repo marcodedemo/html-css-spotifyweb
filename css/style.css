@@ -853,10 +853,6 @@ footer #footer-right #volume-bar #volume-level:hover i{
         width: calc(100% / 4 - 20px);
     }
 
-    /* footer */
-    footer #footer-mid-bottom #time-bar{
-        width: 250px;
-    }
 }
 
 
@@ -894,9 +890,6 @@ footer #footer-right #volume-bar #volume-level:hover i{
     /* FOOTER MID */
     footer #footer-mid-bottom{
         gap: 10px;
-    }
-    footer #footer-mid-bottom #time-bar{
-        width: 150px;
     }
 
     /* FOOTER RIGHT */
@@ -991,9 +984,6 @@ footer #footer-right #volume-bar #volume-level:hover i{
         gap: 10px;
     }
 
-    footer #footer-mid-bottom #time-bar{
-        width: 100px;
-    }
 
     /* FOOTER RIGHT */
     footer #footer-right .icons{
