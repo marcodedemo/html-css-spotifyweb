@@ -614,16 +614,17 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 10px;
-
     position: fixed;
     bottom: 0;
 
+    padding: 0 15px;
 }
 
 
 /* FOOTER LEFT  */
 footer #footer-left{
+    width: 100%;
+    max-width: 250px;
 
     display: flex;
     align-items: center;
@@ -768,8 +769,11 @@ footer #footer-mid-bottom #time-bar #time-listened-bar:hover i{
 /* FOOTER RIGHT */
 
 footer #footer-right{
+    width: 100%;
+    max-width: 250px;
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 5px;
     
@@ -961,10 +965,18 @@ footer #footer-right #volume-bar #volume-level:hover i{
 
     /* footer */
 
+    footer{
+        padding: 0 5px;
+    }
     /* FOOTER LEFT */
+    footer #footer-left{
+        gap: 15px;
+    }
+
     footer #footer-left #playing-song{
         gap: 5px;
     }
+
     footer #footer-left #playing-song img{
         width: 30px;
     }
@@ -973,14 +985,16 @@ footer #footer-right #volume-bar #volume-level:hover i{
     footer #footer-mid-top{
         gap: 10px;
     }
+
     footer #footer-mid-bottom #time-bar{
         width: 100px;
     }
 
     /* FOOTER RIGHT */
     footer #footer-right .icons{
-        gap: 10px;
+        gap: 5px;
     }
+
     footer #footer-right #volume-bar{
         width: 60px;
     }
