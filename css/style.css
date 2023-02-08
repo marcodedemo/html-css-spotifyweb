@@ -687,7 +687,10 @@ footer #footer-mid{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 500px;
 }
 /* footer mid top */
 footer #footer-mid-top {
@@ -719,6 +722,8 @@ footer #footer-mid-bottom {
     display: flex;
     align-items: center;
     gap: 25px;
+
+    width: 100%;
 }
 
 footer #footer-mid-bottom span{
@@ -729,7 +734,7 @@ footer #footer-mid-bottom span{
 /* time bar  */
 footer #footer-mid-bottom #time-bar{
     height: 4px;
-    width: 300px;
+    flex-grow: 1;
     background-color: #656565;
     border-radius: 10px;
 
