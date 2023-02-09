@@ -22,6 +22,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    
 }
 
 .container-flex{
@@ -366,7 +367,7 @@ main #sect1 #recently-played {
 
 /* albums cards */
 main #sect1 #recently-played .card{
-    width: calc(100% / 6 - 20px);
+    width: calc(100% / 6 - 20px / 6 * 5);
 
     display: flex;
     flex-direction: column;
@@ -474,7 +475,7 @@ main #sect2 #created-for{
     padding-top: 30px;
 }
 main #sect2 #created-for .card{
-    width: calc(100% / 6 - 20px);
+    width: calc(100% / 6 - 20px / 6 * 5);
 
     display: flex;
     flex-direction: column;
@@ -566,7 +567,7 @@ main #sect3 #popular-songs{
     padding-top: 30px;
 }
 main #sect3 #popular-songs .card{
-    width: calc(100% / 6 - 20px);
+    width: calc(100% / 6 - 20px / 6 * 5);
 
     display: flex;
     flex-direction: column;
@@ -872,19 +873,20 @@ footer #footer-right #volume-bar #volume-level:hover i{
     }
 
     main #sect1 #recently-played .card{
-        width: calc(100% / 4 - 20px );
+        width: calc(100% / 4 - 20px / 4 * 3 );
     }
 
 
     /* section 2 */
     main #sect2 #created-for .card{
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 4 - 20px / 4 * 3 );
     }
 
 
     /* section 3  */
     main #sect3 #popular-songs .card{
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 4 - 20px / 4 * 3 );
+
     }
 
 }
@@ -896,17 +898,17 @@ footer #footer-right #volume-bar #volume-level:hover i{
 
     /* section 1  */
     main #sect1 #recently-played .card{
-        width: calc(100% / 2 - 20px );
+        width: calc(100% / 2 - 20px / 2 );
     }
 
     /* section 2  */
     main #sect2 #created-for .card{
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 2 - 20px / 2);
     }
 
     /* section 3 */
     main #sect3 #popular-songs .card{
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 2 - 20px / 2);
     }
 
 
