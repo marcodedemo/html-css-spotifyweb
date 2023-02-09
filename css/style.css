@@ -275,9 +275,15 @@ main #premium{
     justify-content: flex-end;
 
     height: 90px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .4);
+    width: calc(100% - 240px);
+    background-color: rgba(0, 0, 0, .8);
     padding-right: 30px;
+
+    position: fixed;
+    top: 0;
+    left: 240px;
+
+    z-index: 2;
 }
 
 main #premium button#upgrade{
@@ -296,7 +302,7 @@ main #premium button#upgrade:hover{
 /* nav  */
 
 nav{
-    padding: 20px 0;
+    padding: 120px 0 50px;
 }
 
 nav ul{
@@ -933,7 +939,7 @@ footer #footer-right #volume-bar #volume-level:hover i{
 
     /* header  */
     header{
-        width:auto;
+        width:50px;
     }
 
     /* HEADER TOP */
@@ -985,6 +991,11 @@ footer #footer-right #volume-bar #volume-level:hover i{
     /* main */
     main{
         width: calc(100% - 50px);
+    }
+
+    main #premium{
+        width: calc(100% - 50px);
+        left: 50px;
     }
 
 
